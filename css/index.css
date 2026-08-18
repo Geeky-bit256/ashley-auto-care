@@ -1,0 +1,530 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b0f13;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root {
+  --color-bg: #0b0f13;
+  --color-bg-light: #141a20;
+  --color-white: #ffffff;
+  --color-text: #d7d9dc;
+  --color-primary: #e32626;
+  --color-primary-dark: #b91d1d;
+  --container-width: 1200px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --transition: 0.3s ease;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  width: min(
+        100% - 2rem,
+        var(--container-width)
+    );
+    
+  margin-inline: auto;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  transition:
+        background var(--transition),
+        transform var(--transition),
+        border-color var(--transition);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-dark);
+}
+
+.btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: var(--color-white);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-primary);
+}
+
+.btn-whatsapp {
+  background: #e32626;
+  color: white;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  position: relative;
+  z-index: 100;
+  background: #080b0e;
+  border-bottom:
+        1px solid rgba(255, 255, 255, 0.06);
+}
+
+.navbar {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.nav-toggle {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  width: 25px;
+  height: 2px;
+  background: white;
+  display: block;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    position: relative;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    background-image:
+        url("../images/hero-car.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0; 
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 8, 11, 0.97) 0%,
+            rgba(5, 8, 11, 0.85) 45%,
+            rgba(5, 8, 11, 0.25) 100%
+        );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text {
+  max-width: 650px;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 9vw, 5rem);
+  line-height: 1.05;
+  margin-bottom: 1.25rem;
+}
+
+.hero h1 span {
+  display: block;
+  color: var(--color-primary);
+}
+
+.hero p {
+  max-width: 560px;
+  margin-bottom: 2rem;
+  color: var(--color-text);
+  font-size: 1rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+}
+
+
+/* =========================
+   HERO FEATURES
+========================= */
+
+.hero-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.hero-feature {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.feature-icon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+  color: var(--color-primary);
+}
+
+.hero-feature div {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-feature strong {
+  font-size: 0.85rem;
+}
+
+.hero-feature span:last-child {
+  color: #aeb2b7;
+  font-size: 0.75rem;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    
+  }
+  
+  .nav-link {
+    position: relative;
+    color: #d5d7da;
+    font-size: 0.9rem;
+    font-weight: 600;
+    
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: var(--color-primary);
+    transition: width var(--transition);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .hero {
+      min-height: 680px;
+    }
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+  background: var(--color-bg);
+  padding-block: 5rem;
+}
+
+.section-header {
+  max-width: 700px;
+  margin-inline: auto;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.section-header .eyebrow {
+  margin-bottom: 0.75rem;
+}
+
+.section-header h2 {
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  line-height: 1.1;
+}
+
+.section-header p {
+  color: var(--color-text);
+  font-size: 1rem;
+}
+
+
+/* =========================
+   SERVICES GRID
+========================= */
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 1.25rem;
+}
+
+
+/* =========================
+   SERVICE CARD
+========================= */
+
+.service-card {
+    overflow: hidden;
+
+    background: #11161b;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: var(--radius-md);
+
+    transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+
+    border-color:
+        rgba(227, 38, 38, 0.7);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================
+   SERVICE IMAGE
+========================= */
+
+.service-image {
+    height: 220px;
+
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease;
+}
+
+.service-card:hover .service-image img {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   SERVICE CONTENT
+========================= */
+
+.service-content {
+    position: relative;
+
+    padding: 2rem 1.5rem 1.5rem;
+}
+
+.service-icon {
+    width: 52px;
+    height: 52px;
+
+    display: grid;
+    place-items: center;
+
+    margin-top: -3.6rem;
+    margin-bottom: 1.25rem;
+
+    position: relative;
+
+    background: #0d1217;
+
+    border:
+        1px solid var(--color-primary);
+
+    border-radius: 50%;
+
+    color: var(--color-primary);
+
+    font-size: 1.4rem;
+}
+
+.service-content h3 {
+    margin-bottom: 0.75rem;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 1.2rem;
+}
+
+.service-content p {
+    margin-bottom: 1.25rem;
+
+    color: #aeb4ba;
+
+    font-size: 0.9rem;
+}
+
+.service-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 0.5rem;
+
+    color: var(--color-primary);
+
+    font-weight: 700;
+
+    transition:
+        gap var(--transition);
+}
+
+.service-link:hover {
+    gap: 0.8rem;
+}
+
+
+/* =========================
+   SERVICES ACTION
+========================= */
+
+.services-action {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 2.5rem;
+}
+
+.services-action .btn {
+    gap: 0.6rem;
+}
+
+@media (min-width: 600px) {
+
+    .services-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (min-width: 1000px) {
+
+    .services-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .services {
+        padding-block: 6rem;
+    }
+
+}
