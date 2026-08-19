@@ -763,6 +763,114 @@ button {
   margin-top: 2.5rem;
 }
 
+/* =========================
+   FINAL CTA
+========================= */
+
+.final-cta {
+  position: relative;
+  overflow: hidden;
+  padding-block: 5rem;
+  background:
+        linear-gradient(
+            135deg,
+            #7f1414,
+            #e32626
+        );
+}
+
+
+/* Decorative background */
+
+.final-cta::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: -150px;
+  right: -100px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+}
+
+.final-cta::after {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  bottom: -300px;
+  left: -150px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+
+/* =========================
+   CTA CONTENT
+========================= */
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+  max-width: 750px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.final-cta .eyebrow {
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+.final-cta h2 {
+  margin-bottom: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2rem, 7vw, 3.8rem);
+  line-height: 1.05;
+}
+
+.final-cta h2 span {
+  display: block;
+  color: #090c0f;
+}
+
+.final-cta p {
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+}
+
+
+/* =========================
+   CTA ACTIONS
+========================= */
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.final-cta .btn-primary {
+  background: #090c0f;
+}
+
+.final-cta .btn-primary:hover {
+  background: #000000;
+}
+
+.final-cta .btn-whatsapp {
+  background: white;
+  color: #15191d;
+}
+
+.final-cta .btn-whatsapp:hover {
+    background: #f1f1f1;
+}
+
 
 /* ---------- Tablets ---------- */
 @media (min-width:600px){
@@ -862,6 +970,10 @@ button {
 
     .work-item-large {
       grid-column: span 2;
+    }
+    
+    .final-cta {
+      padding-block: 6rem;
     }
     
 }
