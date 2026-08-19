@@ -93,8 +93,12 @@ button {
 }
 
 .btn-primary {
+  display:flex;
+  align-items:center;
+  gap:10px;
   background: var(--color-primary);
   color: var(--color-white);
+  
 }
 
 .btn-primary:hover {
@@ -102,6 +106,11 @@ button {
 }
 
 .btn-outline {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:600;
+  transition:.3s;
   border: 1px solid rgba(255, 255, 255, 0.5);
   color: var(--color-white);
 }
@@ -111,8 +120,15 @@ button {
 }
 
 .btn-whatsapp {
+  display:flex;
+  align-items:center;
+  gap:10px;
   background: #e32626;
   color: white;
+}
+
+.btn-whatsapp i {
+  font-size: 1.5rem;
 }
 
 
@@ -251,13 +267,9 @@ button {
 }
 
 .feature-icon {
-  width: 38px;
-  height: 38px;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--color-primary);
-  border-radius: 50%;
-  color: var(--color-primary);
+  width: 34px;
+  height: 34px;
+
 }
 
 .hero-feature div {
@@ -399,9 +411,13 @@ button {
 }
 
 .service-link {
+  
+  gap:10px;
+  font-weight:600;
+  transition:.3s;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  
   color: var(--color-primary);
   font-weight: 700;
   transition:
@@ -957,15 +973,15 @@ button {
 
 .footer-contact li {
   display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
+  gap: 0.5rem;
 }
 
-.footer-contact li span {
-  color: #ffffff;
-  font-size: 0.75rem;
-  font-weight: 700;
+.footer-contact li i {
+  font-size:1.5rem;
+  color:var(--color-primary-dark);
+  
 }
+
 
 
 /* =========================
