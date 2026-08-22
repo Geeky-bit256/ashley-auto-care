@@ -1,0 +1,172 @@
+/* =========================
+   RESET
+========================= */
+
+
+/* Base: Mobile */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b0f13;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root {
+  --color-bg: #0b0f13;
+  --color-bg-light: #141a20;
+  --color-white: #ffffff;
+  --color-text: #d7d9dc;
+  --color-primary: #e32626;
+  --color-primary-dark: #b91d1d;
+  --container-width: 1200px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --transition: 0.3s ease;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+
+  width: min(
+        100% - 2rem,
+        var(--container-width)
+    );
+    
+  margin-inline: auto;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  transition:
+        background var(--transition),
+        transform var(--transition),
+        border-color var(--transition);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-dark);
+}
+
+.btn-outline {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:600;
+  transition:.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: var(--color-white);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-primary);
+}
+
+.btn-whatsapp {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background: #e32626;
+  color: white;
+}
+
+.btn-whatsapp i {
+  font-size: 1.5rem;
+}
+
+/* =========================
+   SECTION HEADER
+========================= */
+
+.eyebrow {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+
+.section-header {
+  max-width: 700px;
+  margin-inline: auto;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.section-header .eyebrow {
+  margin-bottom: 0.75rem;
+}
+
+.section-header h2 {
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  line-height: 1.1;
+}
+
+.section-header p {
+  color: var(--color-text);
+  font-size: 1rem;
+}
+
+
+
