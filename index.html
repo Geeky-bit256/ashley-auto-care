@@ -9,7 +9,11 @@
     <meta name="description" content="Ashley Auto Care provides reliable vehicle servicing, repairs, diagnostics and maintenance.">
     <title>Ashley Auto Care | Reliable Auto Care</title>
 
+        <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
     <link rel="stylesheet" href="css/index.css">
+    
   </head>
 
   <body>
@@ -21,7 +25,7 @@
       <nav class="navbar container">
         
         <a href="index.html" class="logo">
-          <img src="images/logo.png" alt="Ashley Auto Care">
+          <img src="images/ashely-logo.png" alt="Ashley Auto Care">
         </a>
         <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
           <span></span>
@@ -72,40 +76,52 @@
             </div>
               
             <div class="hero-features">
-              
-              <div class="hero-feature">
-      
-                <img class="feature-icon" src="logos/1752079.svg">
-                
-                <div>
-                  <strong>Experience</strong>
-                  <span>Technicians</span>
-                </div>
-              </div>
-                
-              <div class="hero-feature">
-                <img class="feature-icon" src="logos/quality-assurance-icon.svg">
-                  
-                <div>
-                    
-                  <strong>Quality</strong>
-                  <span>Workmanship</span>
-                </div>
-              </div>
-                
-              <div class="hero-feature">
-                  
-                
-                <img class="feature-icon" src="logos/satisfaction-icon.svg">
-                  
-                <div>
-                  <strong>Customer</strong>
-                    
-                  <span>Satisfaction</span>
-                </div>
-              </div>
 
-            </div>
+    <div class="hero-feature">
+
+        <i
+            class="fa-solid fa-user-gear feature-icon"
+            aria-hidden="true"
+        ></i>
+
+        <div>
+            <strong>Experienced</strong>
+            <span>Technicians</span>
+        </div>
+
+    </div>
+
+
+    <div class="hero-feature">
+
+        <i
+            class="fa-solid fa-award feature-icon"
+            aria-hidden="true"
+        ></i>
+
+        <div>
+            <strong>Quality</strong>
+            <span>Workmanship</span>
+        </div>
+
+    </div>
+
+
+    <div class="hero-feature">
+
+        <i
+            class="fa-solid fa-face-smile feature-icon"
+            aria-hidden="true"
+        ></i>
+
+        <div>
+            <strong>Customer</strong>
+            <span>Satisfaction</span>
+        </div>
+
+    </div>
+
+</div>
 
           </div>
         </div>
@@ -114,7 +130,6 @@
       
       <!-- =========== SERVICES ========= -->
       
-      <!-- TODO: Replace those logos with real ones from font awesome -->
       
       <section class="services section">
         
@@ -139,14 +154,14 @@
               
               <div class="service-image">
                 
-                <img src="images/oil-filter.jpg" alt="Oil and filter service" loading="lazy"
+                <img src="images/oil-filter.png" alt="Oil and filter service" loading="lazy"
                     >
                     
               </div>
 
               <div class="service-content">
                 
-                <div class="service-icon">⚙</div>
+                <div class="service-icon"><i class="fa-solid fa-oil-can"></i></div>
                 
                 <h3>Oil & Filter Service</h3>
 
@@ -163,40 +178,26 @@
             <!-- Brake Service -->
 
             <article class="service-card">
+              
+              <div class="service-image">
+                
+                <img src="images/brake-service.png" alt="Brake service" loading="lazy">
+                
+              </div>
+              
+            
+              <div class="service-content">
+                
+                <div class="service-icon"><i class="fa-solid fa-circle-dot"></i></div>
+                
+                <h3>Brake Service</h3>
 
-                <div class="service-image">
-                    <img
-                        src="images/brake-service.jpg"
-                        alt="Brake service"
-                        loading="lazy"
-                    >
-                </div>
+                <p>Expert brake inspection, repair and replacement for your safety and peace of mind.</p>
+                
+                <a href="services.html" class="service-link"
+                    >Learn More<i class="fas fa-arrow-right"></i></a>
 
-                <div class="service-content">
-
-                    <div class="service-icon">
-                        ⛭
-                    </div>
-
-                    <h3>
-                        Brake Service
-                    </h3>
-
-                    <p>
-                        Expert brake inspection, repair
-                        and replacement for your safety
-                        and peace of mind.
-                    </p>
-
-                    <a
-                        href="services.html"
-                        class="service-link"
-                    >
-                        Learn More
-                        <span>→</span>
-                    </a>
-
-                </div>
+              </div>
 
             </article>
 
@@ -204,169 +205,112 @@
             <!-- Engine Repair -->
 
             <article class="service-card">
+              
+              <div class="service-image">
+                
+                <img src="images/engine-repair.png" alt="Engine repair" loading="lazy">
+                
+              </div>
 
-                <div class="service-image">
-                    <img
-                        src="images/engine-repair.jpg"
-                        alt="Engine repair"
-                        loading="lazy"
-                    >
-                </div>
+              <div class="service-content">
+                
+                <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
 
-                <div class="service-content">
+                <h3>Engine Repair</h3>
 
-                    <div class="service-icon">
-                        ⚙
-                    </div>
+                <p>From minor fixes to major overhauls, we keep your engine in top condition.</p>
+                
+                <a href="services.html" class="service-link"
+                    >Learn More<i class="fas fa-arrow-right"></i></a>
 
-                    <h3>
-                        Engine Repair
-                    </h3>
-
-                    <p>
-                        From minor fixes to major overhauls,
-                        we keep your engine in top condition.
-                    </p>
-
-                    <a
-                        href="services.html"
-                        class="service-link"
-                    >
-                        Learn More
-                        <span>→</span>
-                    </a>
-
-                </div>
+              </div>
 
             </article>
 
 
             <!-- Diagnostics -->
 
-            <!--<article class="service-card">
+            <article class="service-card">
 
-                <div class="service-image">
-                    <img
-                        src="images/diagnostics.jpg"
-                        alt="Vehicle diagnostics"
-                        loading="lazy"
-                    >
-                </div>
+              <div class="service-image">
+                
+                <img src="images/diagnostics.png" alt="Vehicle diagnostics" loading="lazy">
+                
+              </div>
 
-                <div class="service-content">
+              <div class="service-content">
+                
+                <div class="service-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
 
-                    <div class="service-icon">
-                        ⌁
-                    </div>
+                <h3>Diagnostics</h3>
 
-                    <h3>
-                        Diagnostics
-                    </h3>
+                <p>Advanced diagnostic tools help us identify vehicle issues quickly and accurately.</p>
+                
+                <a href="services.html" class="service-link"
+                    >Learn More<i class="fas fa-arrow-right"></i></a>
 
-                    <p>
-                        Advanced diagnostic tools help us
-                        identify vehicle issues quickly
-                        and accurately.
-                    </p>
+              </div>
 
-                    <a
-                        href="services.html"
-                        class="service-link"
-                    >
-                        Learn More
-                        <span>→</span>
-                    </a>
-
-                </div>
-
-            </article>-->
+            </article>
 
 
             <!-- Battery -->
 
-            <!--<article class="service-card">
+            <article class="service-card">
 
-                <div class="service-image">
-                    <img
-                        src="images/battery-electrical.jpg"
-                        alt="Battery and electrical service"
-                        loading="lazy"
-                    >
-                </div>
+              <div class="service-image">
+                
+                <img src="images/battery-electrical.png" alt="Battery and electrical service" loading="lazy">
+                
+              </div>
 
-                <div class="service-content">
+              <div class="service-content">
+                
+                <div class="service-icon"><i class="fa-solid fa-battery-full"></i></div>
 
-                    <div class="service-icon">
-                        +
-                    </div>
+                <h3>Battery & Electrical</h3>
 
-                    <h3>
-                        Battery & Electrical
-                    </h3>
+                <p>Battery testing, replacement and complete electrical system repairs.</p>
+                
+                <a href="services.html" class="service-link"
+                    >Learn More<i class="fas fa-arrow-right"></i></a>
+                    
+              </div>
 
-                    <p>
-                        Battery testing, replacement and
-                        complete electrical system repairs.
-                    </p>
-
-                    <a
-                        href="services.html"
-                        class="service-link"
-                    >
-                        Learn More
-                        <span>→</span>
-                    </a>
-
-                </div>
-
-            </article>-->
+            </article>
 
 
             <!-- General Repairs -->
 
-            <!--<article class="service-card">
+            <article class="service-card">
+              
+              <div class="service-image">
+                
+                <img src="images/general-repairs.png" alt="General vehicle repairs" loading="lazy">
+                
+              </div>
+              
+              <div class="service-content">
+                
+                <div class="service-icon"><i class="fa-solid fa-wrench"></i></div>
 
-                <div class="service-image">
-                    <img
-                        src="images/general-repairs.jpg"
-                        alt="General vehicle repairs"
-                        loading="lazy"
-                    >
-                </div>
+                <h3>General Repairs</h3>
 
-                <div class="service-content">
+                <p>Professional repair services for all makes and models.</p>
+                
+                <a href="services.html" class="service-link"
+                    >Learn More<i class="fas fa-arrow-right"></i></a>
 
-                    <div class="service-icon">
-                        🔧
-                    </div>
+              </div>
 
-                    <h3>
-                        General Repairs
-                    </h3>
-
-                    <p>
-                        Professional repair services for
-                        all makes and models.
-                    </p>
-
-                    <a
-                        href="services.html"
-                        class="service-link"
-                    >
-                        Learn More
-                        <span>→</span>
-                    </a>
-
-                </div>
-
-            </article>-->
+            </article>
 
           </div>
           
           <div class="services-action">
 
             <a href="services.html" class="btn btn-outline">
-                View All Services<span>→</span>
+                View All Services<i class="fas fa-arrow-right"></i>
             </a>
 
           </div>
@@ -399,7 +343,7 @@
             
             <article class="why-card">
               <div class="why-icon">
-                <span>⚙</span>
+                <i class="fa-solid fa-user-gear"></i>
               </div>
 
               <h3>Experienced Technicians
@@ -415,7 +359,7 @@
             <article class="why-card">
               
               <div class="why-icon">
-                <span>✓</span>
+                <i class="fa-solid fa-user-shield"></i>
               </div>
               
               <h3>Honest & Transparent
@@ -431,7 +375,7 @@
             <article class="why-card">
               
               <div class="why-icon">
-                <span>◆</span>
+                <i class="fa-solid fa-certificate"></i>
               </div>
 
               <h3>Quality Parts</h3>
@@ -446,7 +390,7 @@
             <article class="why-card">
               
               <div class="why-icon">
-                <span>♥</span>
+                <i class="fa-solid fa-handshake"></i>
               </div>
               
               <h3>Customer Focused
@@ -462,7 +406,7 @@
             <article class="why-card">
               
               <div class="why-icon">
-                <span>◷</span>
+                <i class="fa-solid fa-clock"></i>
               </div>
               
               <h3>Reliable Turnaround</h3>
@@ -520,7 +464,9 @@
                 
                 <div class="about-point">
                   
-                  <span class="about-point-icon">✓</span>
+                  <span class="about-point-icon">
+                    <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+                  </span>
 
                   <div>
                     <strong>Professional Workmanship</strong>
@@ -533,7 +479,9 @@
 
                 <div class="about-point">
                   
-                  <span class="about-point-icon">✓</span>
+                  <span class="about-point-icon">
+                    <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                  </span>
 
                   <div>
                     <strong>Honest Communication</strong>
@@ -546,8 +494,9 @@
 
                 <div class="about-point">
                   
-                  <span class="about-point-icon">✓
-                        </span>
+                  <span class="about-point-icon">
+                    <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                  </span>
 
                   <div>
                     <strong>Customer First</strong>
@@ -596,17 +545,17 @@
             
             <a href="gallery.html" class="work-item work-item-large">
               
-              <img src="images/work-01.jpg" alt="Vehicle repair work" loading="lazy">
+              <img src="images/" alt="Vehicle repair work" loading="lazy">
 
               <div class="work-overlay">
                 <span>Vehicle Repair</span>
-                <strong>View Project →</strong>
+                <strong>View Project</strong>
               </div>
             </a>
 
 
             <a href="gallery.html" class="work-item">
-              <img src="images/work-02.jpg" alt="Engine service" loading="lazy"
+              <img src="images/clutch-fix.png" alt="Engine service" loading="lazy"
                 >
 
               <div class="work-overlay">
@@ -616,10 +565,11 @@
             </a>
 
 
+
             <a href="gallery.html"
                 class="work-item">
               
-              <img src="images/work-03.jpg" alt="Brake service"
+              <img src="images/brake-fix.png" alt="Brake service"
                     loading="lazy">
                     
               <div class="work-overlay">
@@ -684,7 +634,7 @@
 
           <div class="work-action">
             
-            <a href="gallery.html" class="btn btn-outline">View Our Gallery<span>→</span>
+            <a href="gallery.html" class="btn btn-outline">View Our Gallery<i class="fas fa-arrow-right"></i>
             </a>
 
           </div>
@@ -714,8 +664,7 @@
 
             <div class="cta-actions">
               
-              <a href="contact.html"
-                    class="btn btn-primary">
+              <a href="contact.html" class="btn btn-primary">
                     Book a Service<i class="fas fa-arrow-right"></i>
               </a>
 
@@ -875,12 +824,19 @@
           <p>© 2026 Ashley Auto Care. All rights reserved.</p>
 
           <div class="footer-socials">
-              
-            <a href="#" aria-label="Facebook" >FB</a>
 
-            <a href="#" aria-label="Instagram" >IG</a>
+            
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
 
-            <a href="#" aria-label="TikTok">TK</a>
+            <a href="#" aria-label="Instagram" >
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+
+            <a href="#" aria-label="TikTok">
+              <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+            </a>
 
           </div>
 
